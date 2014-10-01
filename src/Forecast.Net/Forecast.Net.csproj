@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{12F45372-8C0E-43E1-963D-DDBD11252F11}</ProjectGuid>
+    <ProjectGuid>{92D0A96E-966D-4CA6-814C-892D0A387BAF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Forecast.Net.Lib</RootNamespace>
-    <AssemblyName>Forecast.Net.Lib</AssemblyName>
+    <RootNamespace>Forecast.Net</RootNamespace>
+    <AssemblyName>Forecast.Net</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,17 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="APredictFactory.cs" />
-    <Compile Include="NaiveAvgPredictFactory.cs" />
-    <Compile Include="NaivePredictFactory.cs" />
-    <Compile Include="SimpleRegressionPredictFactory.cs" />
-    <Compile Include="Utils\GeneratorUtils.cs" />
+    <Compile Include="Forecaster.cs" />
+    <Compile Include="GeneratorByMethod.cs" />
+    <Compile Include="Method\IForecast2.cs" />
+    <Compile Include="Method\IForecast.cs" />
+    <Compile Include="Method\IForecastMethodResult.cs" />
+    <Compile Include="Method\NaiveAvg.cs" />
+    <Compile Include="Method\NaiveLastItem.cs" />
+    <Compile Include="Method\NaiveResult.cs" />
+    <Compile Include="Method\SimpleRegression.cs" />
     <Compile Include="Generator\IResultGenerator.cs" />
     <Compile Include="Generator\LeastSquaresEstimationGenerator.cs" />
     <Compile Include="Generator\NaiveConstGenerator.cs" />
-    <Compile Include="Utils\MathUtils.cs" />
-    <Compile Include="SimpleRegression.cs" />
+    <Compile Include="Method\SimpleRegressionSingle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Method\SimpleRegressionResult.cs" />
+    <Compile Include="Utils\MathUtils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

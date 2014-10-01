@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Forecast.Net.Lib.Generator
+namespace Forecast.Net.Generator
 {
     public class LeastSquaresEstimationGenerator : IResultGenerator<double, double>
     {
-        private LeastSquaresEstimationGenerator() { }
+        public LeastSquaresEstimationGenerator(double beta0, double beta1)
+        {
+            Beta0 = beta0;
+            Beta1 = beta1;
+        }
 
         public double Beta0 { get; private set; }
         public double Beta1 { get; private set; }
@@ -17,13 +21,5 @@ namespace Forecast.Net.Lib.Generator
             return Beta0 + Beta1 * key;
         }
 
-        public static LeastSquaresEstimationGenerator Create(double beta0, double beta1)
-        {
-            return new LeastSquaresEstimationGenerator
-            {
-                Beta0 = beta0,
-                Beta1 = beta1
-            };
-        }
     }
 }

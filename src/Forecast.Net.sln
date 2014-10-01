@@ -1,34 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.Net.Lib", "Forecast.Net.Lib\Forecast.Net.Lib.csproj", "{12F45372-8C0E-43E1-963D-DDBD11252F11}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.Net.Test", "Forecast.Net.Test\Forecast.Net.Test.csproj", "{1EA9B724-3BE3-45BA-8699-FCED837F6177}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F0EAD9A-10AB-4E5D-965B-78D845D62646}"
-	ProjectSection(SolutionItems) = preProject
-		Forecast.Net.vsmdi = Forecast.Net.vsmdi
-		Local.testsettings = Local.testsettings
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forecast.Net", "Forecast.Net\Forecast.Net.csproj", "{92D0A96E-966D-4CA6-814C-892D0A387BAF}"
 EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = Forecast.Net.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{12F45372-8C0E-43E1-963D-DDBD11252F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{12F45372-8C0E-43E1-963D-DDBD11252F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{12F45372-8C0E-43E1-963D-DDBD11252F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{12F45372-8C0E-43E1-963D-DDBD11252F11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EA9B724-3BE3-45BA-8699-FCED837F6177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EA9B724-3BE3-45BA-8699-FCED837F6177}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EA9B724-3BE3-45BA-8699-FCED837F6177}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EA9B724-3BE3-45BA-8699-FCED837F6177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D0A96E-966D-4CA6-814C-892D0A387BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D0A96E-966D-4CA6-814C-892D0A387BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D0A96E-966D-4CA6-814C-892D0A387BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D0A96E-966D-4CA6-814C-892D0A387BAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
