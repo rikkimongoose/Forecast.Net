@@ -16,7 +16,6 @@ namespace Forecast.Net.Method.SES
 
             for (double alpha = 0.1; alpha < 1; alpha += 0.01)
             {
-
                 var predictedX = new List<double>();
                 double errorX = 0;
                 for (int i = 1; i < itemsX.Count - 1; i++)
