@@ -33,6 +33,11 @@ namespace Forecast.Net
                         var generator = _generator.BySimpleRegression(items);
                         return generator.GetEstimated(pos);
                     }
+                case SingleMethod.SES:
+                    {
+                        var generator = _generator.BySimpleRegression(items);
+                        return generator.GetEstimated(pos);
+                    }
             }
             return 0;
         }
@@ -60,7 +65,8 @@ namespace Forecast.Net
     {
         NaiveArg = 0,
         NaiveLastItem = 1,
-        SimpleRegression = 2
+        SimpleRegression = 2,
+        SES = 3
     }
 
     public enum DoubleMethod

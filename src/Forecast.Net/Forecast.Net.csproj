@@ -42,12 +42,15 @@
   <ItemGroup>
     <Compile Include="Forecaster.cs" />
     <Compile Include="GeneratorByMethod.cs" />
+    <Compile Include="Generator\SimpleExpotentialSmoothingGenerator.cs" />
     <Compile Include="Method\IForecast2.cs" />
     <Compile Include="Method\IForecast.cs" />
     <Compile Include="Method\IForecastMethodResult.cs" />
     <Compile Include="Method\NaiveAvg.cs" />
     <Compile Include="Method\NaiveLastItem.cs" />
     <Compile Include="Method\NaiveResult.cs" />
+    <Compile Include="Method\SES\SimpleExponentialSmoothing.cs" />
+    <Compile Include="Method\SES\SimpleExponentialSmoothingResult.cs" />
     <Compile Include="Method\SimpleRegression.cs" />
     <Compile Include="Generator\IResultGenerator.cs" />
     <Compile Include="Generator\LeastSquaresEstimationGenerator.cs" />
