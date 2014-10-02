@@ -29,7 +29,7 @@ namespace Forecast.Net.TestApp
                 allResults += absRes;
             });
             allResults /= _carTestCollection.TrainingSet.Count;
-            Console.WriteLine(string.Format("Least Square Estimation test: {0}", allResults));
+            Console.WriteLine(string.Format("Least Square Estimation average error: {0}", allResults));
         }
     }
 }
